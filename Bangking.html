@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangking Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="mt-10 bg-slate-300 p-8">
+        <h2 class=" text-center text-xl text-green-600">Banking System</h2>
+    </div>
+    <!-- Bangking money tranjection -->
+    <section class="mt-8">
+        <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white ">
+            <div class="bg-blue-300 p-8 rounded">
+                <h2 class="text-2xl">Deposite</h2>
+                <h3 class="text-4xl">$<span id="deposite-total">00</span></h3>
+            </div>
+            <div class="bg-green-300 p-8 rounded">
+                <h2 class="text-2xl">Widthdraw</h2>
+                <h3 class="text-4xl">$<span id="widthdraw-total">00</span></h3>
+            </div>
+            <div class="bg-yellow-300 p-8 rounded">
+                <h2 class="text-2xl">Balance</h2>
+                <h3 class="text-4xl">$<span id="balance-total">1222</span></h3>
+            </div>
+        </div>
+    </section>
+    <!-- Money Deposit & widthdraw field -->
+    <section class="mt-10">
+        <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto ">
+            <div class="bg-slate-500 rounded ">
+                <h3 class="mt-3 mb-3 text-white">Plase Deposite!!!</h3>
+                <input id="input-deposite" class="border block border-gray-400 rounded w-3/4 mb-4 px-2" type="text" placeholder="$ deposite your amount">
+                <button id="deposite-button" class="bg-yellow-600 px-4 rounded py-2 text-white ">Deposite</button>
+            </div>
+            <div class="bg-red-200 rounded">
+                <h3 class="mt-3 mb-3 text-white">Here widthdraw money!!!</h3>
+                <input id="input-widthdraw" class="border block border-gray-400 rounded w-3/4 mb-4 px-2" type="text" placeholder="$ widthdraw your amount">
+                <button id="widthdraw-button" class="bg-yellow-600 px-4 rounded py-2 text-white">Widthdraw</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/bangking.js"></script>
+</body>
+
+</html>
